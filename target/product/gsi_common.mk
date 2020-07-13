@@ -24,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_product.mk)
 ifeq ($(PA_BUILD),)
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AllAudio.mk)
 else
-$(call inherit-product-if-exists, vendor/pa/prebuilt/audio/ParanoidAudio.mk)
+$(call inherit-product-if-exists, vendor/zest/prebuilt/audio/ParanoidAudio.mk)
 endif
 
 # GSI doesn't support apex for now.
